@@ -5,9 +5,17 @@ import { Eyebrow } from "@/components/Section";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Upman Works",
+  title: "About Upman Works — Randburg, Gauteng",
   description:
-    "Upman Works is based in Randburg, Gauteng, providing tree felling and artificial grass installation across the province.",
+    "Upman Works is based in Randburg, Gauteng, providing tree felling and artificial grass installation across the province with skilled, tidy, reliable work.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Upman Works — Randburg, Gauteng",
+    description:
+      "Tree felling and artificial grass installation specialists based in Randburg, serving all of Gauteng.",
+    url: "https://upmanworks.co.za/about",
+    type: "website",
+  },
 };
 
 const principles = [

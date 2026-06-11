@@ -5,9 +5,17 @@ import { serviceCategories } from "@/lib/services";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services — Upman Works",
+  title: "Services — Tree Felling & Artificial Grass in Gauteng",
   description:
-    "Tree felling and artificial grass installation across Gauteng. Safe, skilled, and tidy from the first cut to the final brush.",
+    "Tree felling, stump removal, and artificial grass installation across Gauteng. Safe, skilled, and tidy from the first cut to the final brush.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Services — Tree Felling & Artificial Grass in Gauteng",
+    description:
+      "Tree felling, stump removal, and artificial grass installation across Gauteng.",
+    url: "https://upmanworks.co.za/services",
+    type: "website",
+  },
 };
 
 export default function ServicesPage() {

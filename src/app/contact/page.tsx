@@ -7,9 +7,17 @@ import { site, waLink } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Upman Works",
+  title: "Contact Upman Works — Free Quote in Gauteng",
   description:
-    "Get a free quote from Upman Works. WhatsApp or call us — tree felling and artificial grass installation in Randburg and across Gauteng.",
+    "Get a free quote from Upman Works. WhatsApp or call 076 070 9479 — tree felling and artificial grass installation in Randburg and across Gauteng.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Upman Works — Free Quote in Gauteng",
+    description:
+      "WhatsApp or call us for a free quote — tree felling and artificial grass installation in Randburg and across Gauteng.",
+    url: "https://upmanworks.co.za/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {
