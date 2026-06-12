@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
 import { site } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -159,6 +160,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFab />
+        <Analytics />
       </body>
     </html>
   );
